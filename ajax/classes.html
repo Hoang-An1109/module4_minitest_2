@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Classes</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="classes.js"></script>
+    <link rel="stylesheet" href="classes.css">
+</head>
+<body>
+<h1 id="title">List Classes</h1>
+<div id="div-btn">
+    <button onclick="successHandler()" id="display">Display list classes</button>
+    <button onclick="displayFormCreate()" id="display-create">Create new classes</button>
+</div>
+<div id="classesList"></div>
+
+<form id="add-classes">
+    <h1>Form create</h1>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="name"/>
+    </div>
+    <input type="submit" value="Save" onclick="addNewClasses()"/>
+</form>
+
+<form id="edit-classes">
+    <h1>Form edit</h1>
+    <div>
+        <label for="nameEdit">Name</label>
+        <input type="text" id="nameEdit"/>
+    </div>
+    <input type="submit" value="Save" onclick="updateClasses(event)"/>
+</form>
+</body>
+</html>

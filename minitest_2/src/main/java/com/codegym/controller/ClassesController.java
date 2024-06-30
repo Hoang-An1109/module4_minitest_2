@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
+@CrossOrigin("*")
 @RequestMapping("/api/classes")
 public class ClassesController {
     @Autowired

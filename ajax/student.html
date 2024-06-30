@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Classes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="student.js"></script>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+<h1 id="title">List Student</h1>
+<div id="div-btn">
+    <button onclick="successHandler()" id="display">Display list student</button>
+    <button onclick="displayFormCreate()" id="display-create">Create new student</button>
+</div>
+<div id="studentList"></div>
+<!--<div id="pagination"></div>-->
+
+<form id="form-add-student" enctype="multipart/form-data">
+    <div id="add-student">
+        <h1>Form create</h1>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required/>
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required/>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required/>
+        </div>
+        <div>
+            <label for="img">Img</label>
+            <input type="file" id="img" name="img" accept="image/*" required/>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required/>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required/>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required/>
+        </div>
+        <div>
+            <label for="mark">Mark</label>
+            <input type="number" id="mark" name="mark" step="0.01" required/>
+        </div>
+        <div>
+            <label for="classes">Classes</label>
+            <select id="classes" name="class" required></select>
+        </div>
+        <input type="submit" value="Save"/>
+    </div>
+</form>
+
+<form id="form-edit-student" enctype="multipart/form-data">
+    <div id="edit-student">
+        <h1>Form edit</h1>
+        <div>
+            <input type="hidden" id="editId" name="id">
+        </div>
+        <div>
+            <label for="firstNameEdit">First Name</label>
+            <input type="text" id="firstNameEdit" name="firstNameEdit" required/>
+        </div>
+        <div>
+            <label for="lastNameEdit">Last Name</label>
+            <input type="text" id="lastNameEdit" name="lastNameEdit" required/>
+        </div>
+        <div>
+            <label for="ageEdit">Age</label>
+            <input type="number" id="ageEdit" name="ageEdit" required/>
+        </div>
+        <div>
+            <label for="imgEdit">Img</label>
+            <input type="file" id="imgEdit" name="imgEdit" accept="image/*"/>
+        </div>
+        <div>
+            <label for="phoneNumberEdit">Phone Number</label>
+            <input type="text" id="phoneNumberEdit" name="phoneNumberEdit" required/>
+        </div>
+        <div>
+            <label for="dobEdit">Date of Birth</label>
+            <input type="date" id="dobEdit" name="dobEdit" required/>
+        </div>
+        <div>
+            <label for="addressEdit">Address</label>
+            <input type="text" id="addressEdit" name="addressEdit" required/>
+        </div>
+        <div>
+            <label for="markEdit">Mark</label>
+            <input type="number" id="markEdit" name="markEdit" step="0.01" required/>
+        </div>
+        <div>
+            <label for="classesEdit">Classes</label>
+            <select id="classesEdit" name="classEdit" required></select>
+        </div>
+        <input type="submit" value="Save"/>
+    </div>
+</form>
+
+</body>
+</html>

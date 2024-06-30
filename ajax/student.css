@@ -1,0 +1,56 @@
+#display-create {
+    display: none;
+    float: left;
+}
+
+#display-list {
+    width: 80%;
+    margin: auto;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+#display-list tr, #display-list th, #display-list td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+}
+
+#div-btn {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#title {
+    display: none;
+}
+
+#add-student {
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
+#edit-student {
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 10px;
+}
